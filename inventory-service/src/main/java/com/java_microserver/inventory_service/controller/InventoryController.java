@@ -15,7 +15,7 @@ import java.util.List;
 public class InventoryController {
 
     private final InventoryService inventoryService;
-
+//  http://localhost:8082/api/inventory?skuCodes=iphone_19
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<InventoryResponseDTO> findInventoryOfSkuCodesDTO(@RequestParam List<String> skuCodes) {
